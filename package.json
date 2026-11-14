@@ -1,0 +1,44 @@
+{
+  "name": "@sculptr/quicksave",
+  "version": "1.8.1",
+  "displayName": "Quicksave",
+  "description": "Save anywhere between two of the game's saves",
+  "keywords": [
+    "fangame",
+    "gamemaker",
+    "i-wanna",
+    "mod",
+    "sculptr"
+  ],
+  "homepage": "https://github.com/QuentinJanuel/sculptr-quicksave#readme",
+  "bugs": "https://github.com/QuentinJanuel/sculptr-quicksave/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinJanuel/sculptr-quicksave.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite build --watch\" \"vite preview\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "vite build",
+    "test": "node --test \"src/**/*.test.ts\""
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@sculptr/detect": "^2.4.0",
+    "@sculptr/sdk": "^2.17.0"
+  }
+}
