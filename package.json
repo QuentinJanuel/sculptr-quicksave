@@ -2,6 +2,7 @@
   "name": "@sculptr/quicksave",
   "version": "1.8.1",
   "displayName": "Quicksave",
+  "icon": "https://cdn.jsdelivr.net/npm/@sculptr/quicksave/icon.svg",
   "description": "Save anywhere between two of the game's saves",
   "keywords": [
     "fangame",
@@ -26,7 +27,8 @@
     "test": "node --test \"src/**/*.test.ts\""
   },
   "files": [
-    "dist"
+    "dist",
+    "icon.svg"
   ],
   "publishConfig": {
     "access": "public"
